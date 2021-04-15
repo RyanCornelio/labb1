@@ -3,10 +3,10 @@
 <head>
 	<meta charset="UTF-8" />
 	<title>Labb 1</title>
-	<link href="css/font-awesome.css" rel="stylesheet" type="text/css" />
+	<!-- <link href="css/font-awesome.css" rel="stylesheet" type="text/css" />
 	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
 	<link href="css/style.css" rel="stylesheet" type="text/css" />
-	<script src="js/jquery.js"></script>
+	<script src="js/jquery.js"></script> -->
 </head>
 <body>
 
@@ -219,6 +219,9 @@
 					</div>
 				</div>
 			</section>
+			<?php
+			get_search_form();
+			?>
 		</main>
 
 		<footer id="footer">
@@ -269,7 +272,7 @@
 
 	</div>
 
-	<script src="js/script.js"></script>
-
+<!-- 	<script src="js/script.js"></script>
+ -->
 </body>
 </html>

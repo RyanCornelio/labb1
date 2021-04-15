@@ -6,9 +6,22 @@ add_theme_support('widgets');
 
 // get_sidebar() // Tänk get_header() Eller get_footer...
 
-register_sidebar(
-    
-)
 
+
+register_sidebar(
+
+    [
+
+       'name' => 'search',
+
+       'Description' => 'top_bar_search',
+
+       'id' => 'search_bar', 
+
+       'before_widget' => ' ',
+
+    ]
+
+);
 
 ?>
