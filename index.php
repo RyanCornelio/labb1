@@ -1,25 +1,43 @@
 <?php
-wp_nav_menu(
-    [
-    'container' => 'ul',
-    'hamburgare' => '2',
-    'coca-cola' => '5',
-    'menu_id' => 'mina blommor',
-    ]
-);
+get_header();
 ?>
 
-
+<body>
+<?php
+while ( have_posts()) {
+	the_post();
+?>
+	<main>
+			<section>
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="hero">
+								
+								<?php echo '<hr>'; 
+ 								the_post_thumbnail();
+								?>
+								<div class="text">
+									<h1>
+									<?php
+									the_title();
+									?></h1>
+									<p>
+									<?php
+									the_content();
+									?>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+	</main>
+<?php	
+}
+?>
 
 <?php
-function familyName($fname, $year) {
-    echo "$fname Simpson. Born in $year<br>"; 
-}
-
-familyName("Bart", "1991");
-familyName("Lisa", "1989");
-familyName("Homer", "1956");
-familyName("Marge", "1971");
-familyName("Maggie", "2002");
-
+/*Kalla på footer*/
+get_footer();
 ?>
