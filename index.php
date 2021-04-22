@@ -1,5 +1,6 @@
 <?php
 get_header();
+// Kalla på header.
 ?>
 
 <body>
@@ -38,6 +39,6 @@ while ( have_posts()) {
 ?>
 
 <?php
-/*Kalla på footer*/
+// Kalla på footer
 get_footer();
 ?>
